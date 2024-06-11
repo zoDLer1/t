@@ -1,0 +1,9 @@
+.block:has(input:checked) {
+    & .title {
+        border-bottom: 2px solid #0388d4;
+    }
+}
+.title {
+    font-family: "Roboto";
+    cursor: pointer;
+}

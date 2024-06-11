@@ -1,0 +1,30 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [],
+    "license": "ISC",
+    "scripts": {
+        "build:dev": "webpack --env mode=development",
+        "build:prod": "webpack --env mode=production",
+        "start": "webpack serve --env mode=development"
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@types/react": "^18.3.1",
+        "@types/react-dom": "^18.3.0",
+        "@types/react-router-dom": "^5.3.3"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.5.2",
+        "@fortawesome/free-brands-svg-icons": "^6.5.2",
+        "@fortawesome/free-regular-svg-icons": "^6.5.2",
+        "@fortawesome/free-solid-svg-icons": "^6.5.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router-dom": "^6.23.0"
+    }
+}

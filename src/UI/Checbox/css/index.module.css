@@ -1,0 +1,44 @@
+.block {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    & > * {
+        cursor: pointer;
+    }
+}
+
+.text {
+    font-family: "Roboto";
+    font-size: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-block: 12px;
+    flex: 1;
+    white-space: nowrap;
+}
+
+.block:has(input:checked) {
+    & .icon {
+        display: block;
+    }
+    & .text {
+        color: rgba(0, 0, 0, 0.25);
+        text-decoration: line-through;
+    }
+}
+
+.checkbox {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #0388d4;
+    box-shadow: 0 0 1px #0388d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.icon {
+    display: none;
+}

@@ -1,0 +1,16 @@
+.block {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:last-child {
+        border: none;
+    }
+}
+.input {
+    font-family: "Roboto";
+    font-size: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-block: 12px;
+    flex: 1;
+    white-space: nowrap;
+}
