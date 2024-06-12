@@ -1,9 +1,14 @@
 .block {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    
 
     &:last-child {
         border: none;
     }
+    
 }
 .input {
     font-family: "Roboto";
@@ -11,6 +16,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding-block: 12px;
-    flex: 1;
+    cursor: pointer;
+    user-select: none;
     white-space: nowrap;
 }
+
+.block:has(input:checked) {
+    & .input {
+        color: rgba(0, 0, 0, 0.25);
+        text-decoration: line-through;
+    }
+}
+

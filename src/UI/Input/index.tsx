@@ -1,12 +1,13 @@
 import { InputHTMLAttributes, type FC } from "react";
+import css from './css'
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
-    readOnlyStyle: string;
+    readOnlyStyle?: string;
 }
 
 const Input: FC<IInputProps> = ({ id, readOnly, value, readOnlyStyle, ...props }) => {
     return (
-        <div>
+        <div className={css.block}>
             {readOnly ? (
                 <label className={readOnlyStyle} htmlFor={id}>
                     {value}

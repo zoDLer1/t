@@ -5,8 +5,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 interface ICheckboxProps extends InputHTMLAttributes<HTMLInputElement> {}
 
-const Checkbox: FC<ICheckboxProps> = ({ value, ...props }) => {
-    const id = useId();
+const Checkbox: FC<ICheckboxProps> = ({ id, value, ...props }) => {
 
     return (
         <div className={css.block}>

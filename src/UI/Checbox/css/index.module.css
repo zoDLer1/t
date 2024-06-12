@@ -1,32 +1,17 @@
 .block {
     user-select: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
 
     & > * {
         cursor: pointer;
     }
 }
 
-.text {
-    font-family: "Roboto";
-    font-size: 21px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-block: 12px;
-    flex: 1;
-    white-space: nowrap;
-}
 
 .block:has(input:checked) {
     & .icon {
         display: block;
     }
-    & .text {
-        color: rgba(0, 0, 0, 0.25);
-        text-decoration: line-through;
-    }
+    
 }
 
 .checkbox {
